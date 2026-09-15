@@ -16,6 +16,10 @@ import de.danoeh.antennapod.storage.preferences.UserPreferences;
 public abstract class ItemActionButton {
     FeedItem item;
 
+    protected FeedItem getItem() {
+        return item;
+    }
+
     ItemActionButton(FeedItem item) {
         this.item = item;
     }
